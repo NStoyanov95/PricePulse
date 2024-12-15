@@ -1,0 +1,36 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px rgba(11, 11, 11, 0.5);
+    padding: 2em;
+    border-radius: 5px;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card img {
+    width: 250px;
+    height: auto;
+}
+
+.description {
+    color: #606060;
+}
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cardInfo button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 5p3;
+}
