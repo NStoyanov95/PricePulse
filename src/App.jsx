@@ -5,6 +5,7 @@ function App() {
     return (
         <>
             <Header />
+            <section className="contentContainer"></section>
         </>
     );
 }

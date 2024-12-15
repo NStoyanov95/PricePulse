@@ -2,3 +2,12 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.contentContainer {
+    max-width: 1920px;
+    background-color: #eee;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 5px;
+}
