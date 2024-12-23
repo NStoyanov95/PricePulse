@@ -30,9 +30,11 @@ const CardContainer = () => {
         <>
             <Filter filter={filter} setFilterHandler={setFilterHandler} />
             <section className={styles.cardContainer}>
-                {items.map((item) => (
-                    <Card item={item} key={item.id} />
-                ))}
+                {items.length > 0 ? (
+                    items.map((item) => <Card item={item} key={item.id} />)
+                ) : (
+                    <h1>Nothing to show</h1>
+                )}
             </section>
         </>
     );
