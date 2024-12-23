@@ -1,0 +1,11 @@
+.filterContainer {
+    display: flex;
+    justify-content: end;
+    padding: 0 0.5em;
+}
+.filterContainer select {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    flex: 0 0 10%;
+    border: 1px solid black;
+}
