@@ -1,0 +1,28 @@
+.heroSection {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/herobckgrn.png");
+    background-size: cover;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.mainHeading h1 {
+    font-size: 3em;
+}
+.mainHeading h3 {
+    color: darkorange;
+}
+.catalogBtn {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: darkorange;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 darkorange;
+}
+.catalogBtn:hover {
+    box-shadow: 0 0 25px 0 darkorange;
+}
