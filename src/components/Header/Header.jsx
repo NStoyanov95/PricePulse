@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -7,8 +8,12 @@ const Header = () => {
                 <h2>PricePulse++</h2>
                 <nav className={styles.navMenu}>
                     <ul>
-                        <li>Home</li>
-                        <li>Products</li>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/catalog">Products</Link>
+                        </li>
                         <li>About</li>
                     </ul>
                 </nav>
