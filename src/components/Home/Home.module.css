@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     gap: 2em;
-    padding: 1em;
+    padding: 3em 1em;
 }
 .whyUsCard {
     display: flex;
@@ -46,5 +46,35 @@
     border-radius: 3px;
 }
 .whyUsCard > p {
+    color: rgb(139, 139, 139);
+}
+.howItWorksSection {
+    background: #101010;
+    color: whitesmoke;
+    padding: 3em 0;
+}
+.howItWorksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.howItWorksButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 0 0 40%;
+}
+.howItWorksImage {
+    flex: 0 0 60%;
+}
+.howItWorksContainer article {
+    border: 5px solid rgb(55, 55, 55);
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: left;
+}
+.howItWorksContainer article > p {
     color: rgb(139, 139, 139);
 }
