@@ -11,6 +11,7 @@
 }
 .mainHeading h1 {
     font-size: 3em;
+    text-shadow: black 1px 0 10px;
 }
 .mainHeading h3 {
     color: darkorange;
@@ -24,5 +25,26 @@
     box-shadow: 0 0 10px 0 darkorange;
 }
 .catalogBtn:hover {
-    box-shadow: 0 0 25px 0 darkorange;
+    box-shadow: 0 0 15px 0 darkorange;
+}
+
+.whyUsSection {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+}
+.whyUsCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    padding: 1.5em;
+    flex: 0 0 20%;
+    border-radius: 3px;
+}
+.whyUsCard > p {
+    color: rgb(139, 139, 139);
 }
