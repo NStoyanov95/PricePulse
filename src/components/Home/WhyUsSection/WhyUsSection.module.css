@@ -1,0 +1,20 @@
+.whyUsSection {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 3em 1em;
+}
+.whyUsCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    padding: 1.5em;
+    flex: 0 0 20%;
+    border-radius: 3px;
+}
+.whyUsCard > p {
+    color: rgb(139, 139, 139);
+}
