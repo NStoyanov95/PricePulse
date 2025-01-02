@@ -15,10 +15,12 @@
     gap: 1em;
     flex: 0 0 40%;
 }
-.howItWorksImage {
-    flex: 0 0 60%;
+
+.howItWorkImage > img {
+    width: 500px;
 }
 .howItWorksContainer article {
+    cursor: pointer;
     border: 5px solid rgb(55, 55, 55);
     background-color: rgb(39, 39, 39);
     border-radius: 5px;
