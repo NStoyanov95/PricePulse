@@ -5,8 +5,8 @@
     box-shadow: 0 0 10px 0px rgba(11, 11, 11, 0.1);
     padding: 2em;
     border-radius: 5px;
-    width: 300px;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 .cardContent {
     display: flex;
@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 .card img {
-    width: 250px;
+    width: 100%;
     height: auto;
 }
 
@@ -32,4 +32,14 @@
     background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+    .card {
+        width: 300px;
+        height: 450px;
+    }
+    .card img {
+        width: 250px;
+    }
 }

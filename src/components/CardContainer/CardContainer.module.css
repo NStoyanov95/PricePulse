@@ -1,9 +1,15 @@
 .cardContainer {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em;
     gap: 1em;
+}
+
+@media (min-width: 800px) {
+    .cardContainer {
+        width: 80%;
+    }
 }

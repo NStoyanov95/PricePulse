@@ -5,6 +5,8 @@
 }
 .howItWorksContainer {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     align-items: center;
     justify-content: space-around;
 }
@@ -29,4 +31,10 @@
 }
 .howItWorksContainer article > p {
     color: rgb(139, 139, 139);
+}
+
+@media (min-width: 800px) {
+    .howItWorksContainer {
+        flex-direction: row;
+    }
 }
