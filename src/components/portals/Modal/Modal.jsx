@@ -8,10 +8,8 @@ const Modal = ({ show, onClose, children }) => {
     }
 
     return ReactDOM.createPortal(
-        <div className={styles.outer}>
-            <div className={styles.inner}>
-                <h1>Portal Test</h1>
-            </div>
+        <div className={styles.outer} onClick={onClose}>
+            <div className={styles.inner}>{children}</div>
         </div>,
         document.getElementById("portal")
     );
