@@ -3,6 +3,7 @@ import Modal from "../portals/Modal/Modal";
 
 import styles from "./LoginModal.module.css";
 import { useNavigate } from "react-router-dom";
+import validateFormData from "../../utils/validateFormData";
 
 const LoginModal = () => {
     const navigate = useNavigate();
@@ -11,6 +12,7 @@ const LoginModal = () => {
         username: "",
         password: "",
     });
+    const [errors, setErrors] = useState({});
 
     const onClose = () => {
         setShow(false);
@@ -28,10 +30,18 @@ const LoginModal = () => {
         e.stopPropagation();
     };
 
+    const formErrors = validateFormData(formData);
     const onSubmit = (e) => {
         e.preventDefault();
+
+        if (Object.keys(formErrors).length > 0) {
+            setErrors(formErrors);
+            return;
+        }
+        setErrors({});
         console.log(formData);
     };
+
     return (
         <>
             <Modal show={show} onClose={onClose}>
@@ -51,6 +61,9 @@ const LoginModal = () => {
                             onChange={changeHandler}
                         />
                         <label htmlFor="username">Username</label>
+                        {errors.username && (
+                            <p className={styles.error}>{errors.username}</p>
+                        )}
                     </div>
                     <div className={styles.field}>
                         <input
@@ -62,6 +75,9 @@ const LoginModal = () => {
                             onChange={changeHandler}
                         />
                         <label htmlFor="password">Password</label>
+                        {errors.password && (
+                            <p className={styles.error}>{errors.password}</p>
+                        )}
                     </div>
                     <button>Login</button>
                 </form>
