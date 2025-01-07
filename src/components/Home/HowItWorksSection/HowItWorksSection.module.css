@@ -19,7 +19,7 @@
 }
 
 .howItWorkImage > img {
-    width: 500px;
+    width: 80%;
     height: 400px;
 }
 .howItWorksContainer article {
@@ -37,5 +37,8 @@
 @media (min-width: 800px) {
     .howItWorksContainer {
         flex-direction: row;
+    }
+    .howItWorkImage > img {
+        width: 500px;
     }
 }
