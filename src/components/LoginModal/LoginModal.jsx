@@ -50,6 +50,9 @@ const LoginModal = () => {
                     onSubmit={onSubmit}
                     onClick={handlePropagation}
                 >
+                    <div className={styles.closeBtn} onClick={onClose}>
+                        x
+                    </div>
                     <h2>Sign In</h2>
                     <div className={styles.field}>
                         <input
