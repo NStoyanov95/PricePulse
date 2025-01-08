@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3em;
-    padding: 2em;
+    padding: 3em;
     position: relative;
 }
 .field {
@@ -56,7 +56,7 @@
 .closeBtn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0.5em;
     cursor: pointer;
     font-size: 1.5em;
 }
