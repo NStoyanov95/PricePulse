@@ -6,6 +6,7 @@ import { AiOutlineUser, AiFillLock } from "react-icons/ai";
 import styles from "./LoginModal.module.css";
 import { useNavigate } from "react-router-dom";
 import validateFormData from "../../utils/validateFormData";
+import CustomInput from "../CustomInput/CustomInput";
 
 const LoginModal = () => {
     const navigate = useNavigate();
@@ -56,40 +57,29 @@ const LoginModal = () => {
                         x
                     </div>
                     <h2>Sign In</h2>
-                    <div className={styles.field}>
-                        <div className={styles.icon}>
-                            <AiOutlineUser />
-                        </div>
-                        <input
-                            type="text"
-                            name="username"
-                            id="username"
-                            placeholder="Username"
-                            value={formData.username}
-                            onChange={changeHandler}
-                        />
-                        <label htmlFor="username">Username</label>
-                        {errors.username && (
-                            <p className={styles.error}>{errors.username}</p>
-                        )}
-                    </div>
-                    <div className={styles.field}>
-                        <div className={styles.icon}>
-                            <AiFillLock />
-                        </div>
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            placeholder="Password"
-                            value={formData.password}
-                            onChange={changeHandler}
-                        />
-                        <label htmlFor="password">Password</label>
-                        {errors.password && (
-                            <p className={styles.error}>{errors.password}</p>
-                        )}
-                    </div>
+                    {Object.keys(errors).length > 0 && (
+                        <p className={styles.error}>{errors.message}</p>
+                    )}
+                    <CustomInput
+                        type={"text"}
+                        name={"username"}
+                        id={"username"}
+                        placeholder={"username"}
+                        value={formData.username}
+                        onChange={changeHandler}
+                        label={"username"}
+                        icon={<AiOutlineUser />}
+                    />
+                    <CustomInput
+                        type={"password"}
+                        name={"password"}
+                        id={"password"}
+                        placeholder={"password"}
+                        value={formData.password}
+                        onChange={changeHandler}
+                        label={"password"}
+                        icon={<AiFillLock />}
+                    />
                     <button>Login</button>
                 </form>
             </Modal>
