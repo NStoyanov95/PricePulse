@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Modal from "../portals/Modal/Modal";
 
+import { AiOutlineUser, AiFillLock } from "react-icons/ai";
+
 import styles from "./LoginModal.module.css";
 import { useNavigate } from "react-router-dom";
 import validateFormData from "../../utils/validateFormData";
@@ -55,6 +57,9 @@ const LoginModal = () => {
                     </div>
                     <h2>Sign In</h2>
                     <div className={styles.field}>
+                        <div className={styles.icon}>
+                            <AiOutlineUser />
+                        </div>
                         <input
                             type="text"
                             name="username"
@@ -69,6 +74,9 @@ const LoginModal = () => {
                         )}
                     </div>
                     <div className={styles.field}>
+                        <div className={styles.icon}>
+                            <AiFillLock />
+                        </div>
                         <input
                             type="password"
                             name="password"
